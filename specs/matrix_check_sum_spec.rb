@@ -2,6 +2,8 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/matrix_check_sum'
 
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 describe "matrix check sum" do
   describe "basic tests" do
     it "4 X 4 matrix check sum true" do
